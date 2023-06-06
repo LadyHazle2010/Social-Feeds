@@ -13,7 +13,11 @@ const Post = ({ post }) => {
           <div className="d-flex">
             <i
               className="fa fa-thumbs-o-up fa-2x"
-              style={{ color: "yellowgreen", cursor: "pointer" }}
+              style={{
+                color: "yellowgreen",
+                cursor: "pointer",
+                transition: "color 0.2s",
+              }}
               onMouseEnter={(e) => {
                 e.target.style.color = "red"; // Change color on hover
               }}
@@ -23,7 +27,11 @@ const Post = ({ post }) => {
             ></i>
             <i
               className="fa fa-thumbs-o-down fa-2x ml-3"
-              style={{ color: "yellowgreen", cursor: "pointer" }}
+              style={{
+                color: "yellowgreen",
+                cursor: "pointer",
+                transition: "color 0.2s",
+              }}
               onMouseEnter={(e) => {
                 e.target.style.color = "black"; // Change color on hover
               }}
