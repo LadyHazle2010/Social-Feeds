@@ -5,7 +5,7 @@ const Post = ({ post }) => {
     <div className="card my-3">
       {/* Post Header */}
       <div className="card-header">
-        <h5 className="text-primary">{post.title}</h5>
+        <h5 style={{ color: "blue" }}>{post.title}</h5>
         <div
           className="d-flex"
           style={{ position: "absolute", right: "20px", top: "10px" }}
@@ -32,7 +32,9 @@ const Post = ({ post }) => {
               }}
             ></i>
           </div>
-          <div className="ml-5 my-auto text-primary">{post.createdAt}</div>
+          <div className="ml-5 my-auto" style={{ color: "blue" }}>
+            {post.createdAt}
+          </div>
         </div>
       </div>
 
