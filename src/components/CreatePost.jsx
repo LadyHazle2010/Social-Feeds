@@ -1,11 +1,23 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useDataContext } from "../contexts/DataContext";
 
 const CreatePost = () => {
   const { register, handleSubmit, errors } = useForm();
 
-  const onSubmit = () => {
-    console.log("form submit");
+  const { data, setData } = useDataContext();
+
+  const onSubmit = (params) => {
+    const today = new Date();
+
+    const newData = {
+      id: data.length + 1,
+      author: "Michael",
+      today,
+      ...params,
+    };
+
+    setData([...data, newData]);
   };
   return (
     <div className="container">
