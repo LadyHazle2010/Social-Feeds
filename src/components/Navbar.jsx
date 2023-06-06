@@ -28,7 +28,7 @@ const Navbar = () => {
                 activeStyle={{
                   fontWeight: "bold",
                 }}
-                to="/create"
+                to="/createPost"
               >
                 Create Post
               </NavLink>
