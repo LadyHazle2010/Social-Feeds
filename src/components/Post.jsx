@@ -1,4 +1,5 @@
 import React from "react";
+import LDButton from "./LDButton/LDButton";
 const Post = ({ post }) => {
   return (
     <div className="card my-3">
@@ -7,6 +8,7 @@ const Post = ({ post }) => {
       </div>
       <div className="card-body">{post.body}</div>
       <div className="card-footer d-flex justify-content-end">
+        <LDButton />
         <div className="ml-5 my-auto">{post.createdAt}</div>
       </div>
     </div>
