@@ -47,7 +47,7 @@ const CreatePost = () => {
               <div className="form-group">
                 <label>Content</label>
                 <textarea
-                  name="body"
+                  name="content"
                   cols="30"
                   rows="5"
                   className="form-control"
