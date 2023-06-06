@@ -25,6 +25,7 @@ const CreatePost = () => {
     setData([...data, newData]);
     history.push("/");
   };
+
   return (
     <div className="container">
       <div className="card my-3">
@@ -39,6 +40,9 @@ const CreatePost = () => {
                   name="title"
                   ref={register({ required: true })}
                 />
+                <small className="form-text text-danger">
+                  {errors.title && "Invalid Title"}
+                </small>
               </div>
               <div className="form-group">
                 <label>Content</label>
@@ -49,6 +53,9 @@ const CreatePost = () => {
                   className="form-control"
                   ref={register({ required: true })}
                 ></textarea>
+                <small className="form-text text-danger">
+                  {errors.body && "Invalid Content"}
+                </small>
               </div>
               <button type="submit" className="btn btn-primary">
                 Create Post
