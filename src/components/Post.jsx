@@ -32,7 +32,7 @@ const Post = ({ post }) => {
               }}
             ></i>
           </div>
-          <div className="ml-5 my-auto">{post.createdAt}</div>
+          <div className="ml-5 my-auto text-primary">{post.createdAt}</div>
         </div>
       </div>
 
