@@ -28,7 +28,7 @@ const App = () => {
         <div className="m-3">
           <br />
           <Route path="/" exact component={PostList} />
-          <Route path="/create" exact component={CreatePost} />
+          <Route path="/createPost" exact component={CreatePost} />
         </div>
       </BrowserRouter>
     </DataContext.Provider>
