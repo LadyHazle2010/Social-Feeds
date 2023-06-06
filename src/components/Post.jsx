@@ -1,5 +1,4 @@
 import React from "react";
-import LDButton from "./LDButton/LDButton";
 const Post = ({ post }) => {
   return (
     <div className="card my-3">
@@ -9,7 +8,28 @@ const Post = ({ post }) => {
           className="d-flex"
           style={{ position: "absolute", right: "20px", top: "10px" }}
         >
-          <LDButton />
+          <div className="d-flex">
+            <i
+              className="fa fa-thumbs-o-up fa-2x"
+              style={{ color: "yellowgreen", cursor: "pointer" }}
+              onMouseEnter={(e) => {
+                e.target.style.color = "red"; // Change color on hover
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.color = "yellowgreen"; // Reset color on mouse leave
+              }}
+            ></i>
+            <i
+              className="fa fa-thumbs-o-down fa-2x ml-3"
+              style={{ color: "yellowgreen", cursor: "pointer" }}
+              onMouseEnter={(e) => {
+                e.target.style.color = "black"; // Change color on hover
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.color = "yellowgreen"; // Reset color on mouse leave
+              }}
+            ></i>
+          </div>
           <div className="ml-5 my-auto">{post.createdAt}</div>
         </div>
       </div>

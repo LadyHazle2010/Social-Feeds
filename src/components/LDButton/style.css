@@ -4,36 +4,18 @@
     margin: 0;
 }
 
-.like-btn {
-    border: none;
-    color: #fff;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background-color: yellowgreen;
-    border-radius: 4px;
-    padding: 6px 15px;
-    margin: 0 10px;
+
+.like, .dislike {
+    color: yellowgreen;
+
 }
 
-.dislike-btn {
-    border: none;
-    color: #fff;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background-color: yellowgreen;
-    border-radius: 4px;
-    padding: 6px 15px;
-    margin: 0 10px;
+.like:hover {
+    cursor: pointer;
+    color: rgb(29, 12, 221);
 }
 
-.like-btn:hover {
-    background-color: #ff0063;
-}
-
-.dislike-btn:hover {
-    background-color: #394350;
+.dislike:hover {
+    cursor: pointer;
+    color: rgb(15, 16, 15);
 }
