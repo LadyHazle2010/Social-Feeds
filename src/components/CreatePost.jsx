@@ -1,9 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDataContext } from "../contexts/DataContext";
 
 const CreatePost = () => {
   const { register, handleSubmit, errors } = useForm();
+  const history = useHistory();
 
   const { data, setData } = useDataContext();
 
@@ -21,6 +23,7 @@ const CreatePost = () => {
       ...params,
     };
     setData([...data, newData]);
+    history.push("/");
   };
   return (
     <div className="container">
