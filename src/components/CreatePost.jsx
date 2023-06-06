@@ -9,14 +9,17 @@ const CreatePost = () => {
 
   const onSubmit = (params) => {
     const today = new Date();
+    const dd = String(today.getDate()).padStart(2, "0");
+    const mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+    const yyyy = today.getFullYear();
+    const createdAt = yyyy + "-" + mm + "-" + dd;
 
     const newData = {
       id: data.length + 1,
       author: "Michael",
-      today,
+      createdAt,
       ...params,
     };
-
     setData([...data, newData]);
   };
   return (
