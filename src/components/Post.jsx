@@ -1,7 +1,9 @@
 import React from "react";
+
 const Post = ({ post }) => {
   return (
     <div className="card my-3">
+      {/* Post Header */}
       <div className="card-header">
         <h5 className="text-primary">{post.title}</h5>
         <div
@@ -33,6 +35,8 @@ const Post = ({ post }) => {
           <div className="ml-5 my-auto">{post.createdAt}</div>
         </div>
       </div>
+
+      {/* Post Content */}
       <div className="card-body">{post.body}</div>
     </div>
   );
