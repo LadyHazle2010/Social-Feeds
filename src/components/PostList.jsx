@@ -3,7 +3,7 @@ import Post from "./Post";
 import { useDataContext } from "../contexts/DataContext";
 
 const PostList = () => {
-  const { data } = useDataContext();
+  const { data } = useDataContext(); //post data in datacontext
   return (
     <div className="container">
       {data.map((post) => (
