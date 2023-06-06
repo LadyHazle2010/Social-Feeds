@@ -58,7 +58,7 @@ const CreatePost = () => {
                 </small>
               </div>
               <button type="submit" className="btn btn-primary">
-                Create Post
+                Create
               </button>
             </form>
           </div>
